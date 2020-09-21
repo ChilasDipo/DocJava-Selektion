@@ -24,4 +24,26 @@ public class Opgave4 {
 
 
     }
+    public static int funktion (int x, int y , int z){
+        int temp = -1;
+        if (y == x & y == z) {
+             temp = 1 ;
+        } else if (y > x & y > z) {
+             temp = 2;
+        } else if (x > y & x > z) {
+             temp = 3 ;
+        } else if (z > y & z > x) {
+             temp = 4 ;
+        } else if (z == x & z > y)  {
+             temp = 5 ;
+        }else if (y == x & y > z) {
+             temp = 6 ;
+        }else if (z == y & z > x) {
+             temp = 7 ;
+        }else {
+             temp = 8 ;
+        }
+        return  temp ;
+    }
+
 }
